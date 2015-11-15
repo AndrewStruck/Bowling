@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<style>
+			[id*="score_2"], [id*="score_3"]{
+				border-left: 1px solid black;
+				border-bottom: 1px solid black;
+			}
+			[id*="score_1"]{
+				border-bottom: 1px solid white;
+			}
+			table{
+				border-left: 1px solid black;
+				border-bottom: 1px solid black;
+				border-top: 1px solid black;
+				float: left;
+				font-family: monospace;
+			}
+		</style>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_1">&nbsp;</td>
+				<td id="score_2_1">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_1">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_2">&nbsp;</td>
+				<td id="score_2_2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_2">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_3">&nbsp;</td>
+				<td id="score_2_3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_3">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_4">&nbsp;</td>
+				<td id="score_2_4">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_4">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_5">&nbsp;</td>
+				<td id="score_2_5">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_5">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_6">&nbsp;</td>
+				<td id="score_2_6">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_6">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_7">&nbsp;</td>
+				<td id="score_2_7">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_7">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_8">&nbsp;</td>
+				<td id="score_2_8">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_8">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td id="score_1_9">&nbsp;</td>
+				<td id="score_2_9">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_9">&nbsp;</td>
+			</tr>
+		</table>
+		<table cellspacing="0" style="border-right: 1px solid black;">
+			<tr>
+				<td id="score_1_10" style="border-left: 0px solid black; border-bottom: 1px solid white;">&nbsp;</td>
+				<td id="score_2_10">&nbsp;</td>
+				<td id="score_3_10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="turn_10">&nbsp;</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		Roll
+		<input type="text" id="input">
+		<button onclick="Roll(parseInt(document.getElementById('input').value)); document.getElementById('input').value = '';">
+			Submit
+		</button>
+		<p id="FinalScore"/>
+	</body>
+</html>
+<script src="Game.js"></script>
